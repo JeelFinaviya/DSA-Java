@@ -1,6 +1,6 @@
 # DSA Journey 🚀
 
-Language: Java
+Language: Python
 
 Started: July 25, 2026
 
