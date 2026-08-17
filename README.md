@@ -1,330 +1,627 @@
+
+````markdown
 # 🧠 Data Structures & Algorithms — Java
 
-A structured repository for learning, implementing, and practicing
-Data Structures and Algorithms using Java.
+> A structured journey of learning, implementing, and practicing Data Structures & Algorithms using Java.
 
-This repository contains my Java DSA implementations, practice
-programs, and problem-solving exercises as part of my continuous
-learning journey.
+This repository contains my Java-based **Data Structures and Algorithms (DSA)** implementations, practice programs, and problem-solving exercises.
 
+The purpose of this repository is to build a strong foundation in DSA by understanding concepts, implementing them from scratch, practicing different approaches, and gradually progressing toward advanced topics.
 
-# 📚 ABOUT THIS REPOSITORY
+---
 
-The goal of this repository is to build a strong foundation in
-Data Structures and Algorithms by understanding concepts and
-implementing them from scratch using Java.
+## 🎯 Repository Goals
 
-🎯 Goals:
-- 🧩 Understand fundamental data structures
-- ⚙️ Implement data structures from scratch
-- 🧠 Improve logical and problem-solving skills
-- 🔄 Understand algorithms and their working
+- 🧠 Build strong problem-solving skills
 - ☕ Strengthen Java programming fundamentals
+- 🧩 Understand fundamental and advanced data structures
+- ⚙️ Implement algorithms from scratch
+- 📊 Understand Time and Space Complexity
+- 🔄 Practice different problem-solving approaches
 - 🎯 Prepare for coding interviews and placements
-- 📈 Track my DSA learning progress
+- 📈 Maintain a structured record of my DSA journey
 
+---
 
-# 🗂️ TOPICS
+# 📚 Topics
 
-┌─────────────────────────────────────────────┐
-│              JAVA DSA ROADMAP               │
-├─────────────────────────────────────────────┤
-│ 🔢 Arrays                                   │
-│ 🔤 Strings                                  │
-│ 🔁 Recursion                                │
-│ 🔗 Linked Lists                             │
-│ 📚 Stack                                    │
-│ 🚶 Queue                                    │
-│ 🔍 Searching                                │
-│ 🔀 Sorting                                  │
-│ 🌳 Trees                                    │
-│ 🌲 Binary Search Tree                       │
-│ ⛰️ Heap                                     │
-│ #️⃣ Hashing                                  │
-│ 🕸️ Graphs                                   │
-│ 🧮 Dynamic Programming                      │
-└─────────────────────────────────────────────┘
+This repository covers the following major Data Structures and Algorithms topics:
 
+### 🔢 Arrays
 
-# 🔁 RECURSION
+Fundamental linear data structure used to store elements in contiguous memory.
 
-## 🗼 Tower of Hanoi
+**Topics:**
+- Array Traversal
+- Insertion
+- Deletion
+- Searching
+- Updating Elements
+- Two Pointer Technique
+- Prefix Sum
+- Sliding Window
+- Array-Based Problems
 
-A classic recursion problem used to understand recursive
-function calls and problem decomposition.
+---
 
-### Concepts Practiced
-- 🔁 Recursion
-- 🧱 Base condition
-- 🔄 Recursive calls
-- 🗼 Source, destination and auxiliary rods
-- 🧠 Problem decomposition
+### 🔤 Strings
 
+String manipulation and problem-solving using Java.
 
-# 📚 STACK
+**Topics:**
+- String Traversal
+- Character Operations
+- String Comparison
+- StringBuilder
+- String Manipulation
+- Palindrome Problems
+- Frequency Counting
+- Substrings
+- String Searching
 
-## 🥞 Stack Using Array
+---
 
-An array-based stack implementation demonstrating the
-LIFO (Last In, First Out) principle.
+### 🔁 Recursion
 
-### Operations
-- ➕ push()
-- ➖ pop()
-- 👀 peep()
-- 🔄 change()
+Understanding how a function calls itself to solve smaller versions of a problem.
 
-### Concepts
-- 📌 LIFO
-- ⚠️ Stack Overflow
-- ⚠️ Stack Underflow
-- 🔝 Top pointer
-- 🧮 Array-based implementation
+**Topics:**
+- Base Conditions
+- Recursive Calls
+- Recursive Problem Solving
+- Recursion Trees
+- Mathematical Recursion
+- Divide and Conquer
+- Backtracking Basics
 
-Example:
+#### 🗼 Current Practice
 
-        TOP
-         ↓
-      ┌─────┐
-      │  30 │
-      ├─────┤
-      │  20 │
-      ├─────┤
-      │  10 │
-      └─────┘
+**Tower of Hanoi**
 
-    Last In → First Out
+The current implementation demonstrates:
+- Recursive function calls
+- Base condition
+- Source rod
+- Destination rod
+- Auxiliary rod
+- Recursive problem decomposition
 
+---
 
-# 🔗 SINGLY LINKED LIST
+### 🔗 Linked Lists
 
-A Singly Linked List implementation using nodes and references.
+Dynamic node-based data structures where elements are connected using references.
 
-### Operations
-- ➕ Insert First
-- ➕ Insert Last
-- 🎯 Insert Before
-- 🎯 Insert After
-- ❌ Delete First
-- ❌ Delete Last
-- ❌ Delete Particular Node
-- 📊 Ordered Insertion
-- 👀 Display / Traversal
+#### Singly Linked List
 
-Structure:
+**Operations:**
+- Insert First
+- Insert Last
+- Insert Before
+- Insert After
+- Delete First
+- Delete Last
+- Delete Particular Node
+- Ordered Insertion
+- Traversal
 
+**Structure:**
+
+```text
 HEAD
  ↓
 [10] → [20] → [30] → NULL
+````
 
+#### Doubly Linked List
 
-# 🔗 DOUBLY LINKED LIST
+Each node maintains references to both the previous and next nodes.
 
-A Doubly Linked List implementation where every node maintains
-both previous and next references.
+**Operations:**
 
-### Operations
-- ➕ Insert First
-- ➕ Insert Last
-- 🎯 Insert Before
-- 🎯 Insert After
-- ❌ Delete Particular Node
-- 👀 Display / Traversal
+* Insert First
+* Insert Last
+* Insert Before
+* Insert After
+* Delete Particular Node
+* Forward Traversal
 
-Structure:
+**Structure:**
 
+```text
 NULL ← [10] ⇄ [20] ⇄ [30] → NULL
+```
 
+#### Circular Linked List
 
-# 🔄 CIRCULAR LINKED LIST
+The last node points back to the first node, creating a circular structure.
 
-A Circular Linked List implementation where the last node
-connects back to the head.
+**Operations:**
 
-### Operations
-- ➕ Insert First
-- ➕ Insert Last
-- 🎯 Insert Before
-- 🎯 Insert After
-- 📊 Ordered Insertion
-- ❌ Delete First
-- ❌ Delete Last
-- ❌ Delete Particular Node
-- 👀 Display / Traversal
+* Insert First
+* Insert Last
+* Insert Before
+* Insert After
+* Ordered Insertion
+* Delete First
+* Delete Last
+* Delete Particular Node
+* Circular Traversal
 
-Structure:
+**Structure:**
 
-       ┌──────────────────────────┐
-       │                          │
-       ▼                          │
-[10] → [20] → [30] → [40] ───────┘
-  ↑
- HEAD
+```text
+        ┌──────────────────────┐
+        │                      ↓
+     [10] → [20] → [30] → [40]
+       ↑                      │
+       └──────────────────────┘
+```
 
+---
 
-# 🧩 DATA STRUCTURES CURRENTLY PRACTICED
+### 📚 Stack
 
-🔁 Recursion
-📚 Stack
-🔗 Singly Linked List
-🔗 Doubly Linked List
-🔄 Circular Linked List
+A Stack follows the **LIFO (Last In, First Out)** principle.
 
+**Topics:**
 
-# 🛠️ TECHNOLOGY
+* Stack Using Array
+* Push
+* Pop
+* Peep
+* Change
+* Overflow
+* Underflow
+* Top Pointer
+* Stack Applications
 
-☕ Java
+#### Current Practice
 
-Core Concepts:
-- Object-Oriented Programming
-- Classes & Objects
-- Methods
-- Arrays
-- References
-- Recursion
-- Data Structures
-- Algorithms
-- Problem Solving
+**Array-Based Stack Implementation**
 
+```text
+push()
+pop()
+peep()
+change()
+```
 
-# 📈 LEARNING ROADMAP
+**Stack Representation:**
 
+```text
+       TOP
+        ↓
+     ┌─────┐
+     │ 30  │
+     ├─────┤
+     │ 20  │
+     ├─────┤
+     │ 10  │
+     └─────┘
+
+Last In → First Out
+```
+
+---
+
+### 🚶 Queue
+
+A Queue follows the **FIFO (First In, First Out)** principle.
+
+**Topics:**
+
+* Queue Using Array
+* Enqueue
+* Dequeue
+* Front
+* Rear
+* Overflow
+* Underflow
+* Circular Queue
+* Queue Applications
+
+---
+
+### 🔍 Searching Algorithms
+
+Algorithms used to locate elements efficiently.
+
+**Topics:**
+
+* Linear Search
+* Binary Search
+* Iterative Binary Search
+* Recursive Binary Search
+* Searching in Sorted Arrays
+* Search Space Reduction
+
+---
+
+### 🔀 Sorting Algorithms
+
+Algorithms used to arrange data in a specific order.
+
+**Topics:**
+
+* Bubble Sort
+* Selection Sort
+* Insertion Sort
+* Merge Sort
+* Quick Sort
+* Counting Sort
+* Stable and Unstable Sorting
+* Sorting Complexity Analysis
+
+---
+
+### 🌳 Trees
+
+Hierarchical data structures consisting of nodes connected through edges.
+
+**Topics:**
+
+* Root
+* Parent
+* Child
+* Leaf
+* Height
+* Depth
+* Binary Trees
+* Tree Traversals
+
+**Traversal Techniques:**
+
+* Preorder
+* Inorder
+* Postorder
+* Level Order
+
+---
+
+### 🌲 Binary Search Tree
+
+A Binary Search Tree follows the property:
+
+```text
+Left Subtree < Root < Right Subtree
+```
+
+**Topics:**
+
+* BST Creation
+* Insertion
+* Searching
+* Deletion
+* Minimum Value
+* Maximum Value
+* Tree Traversals
+* BST Properties
+
+---
+
+### ⛰️ Heap
+
+A Heap is a specialized tree-based data structure.
+
+**Topics:**
+
+* Min Heap
+* Max Heap
+* Heapify
+* Insertion
+* Deletion
+* Priority Queue
+* Heap Sort
+
+---
+
+### #️⃣ Hashing
+
+Hashing provides efficient data storage and retrieval using key-value relationships.
+
+**Topics:**
+
+* Hash Functions
+* Hash Tables
+* Collision
+* Collision Handling
+* HashMap
+* HashSet
+* Frequency Counting
+
+---
+
+### 🕸️ Graphs
+
+Graphs are used to represent relationships between different entities.
+
+**Topics:**
+
+* Vertices
+* Edges
+* Directed Graph
+* Undirected Graph
+* Weighted Graph
+* Graph Representation
+* Adjacency Matrix
+* Adjacency List
+* Breadth First Search (BFS)
+* Depth First Search (DFS)
+
+---
+
+### 🧮 Dynamic Programming
+
+Dynamic Programming solves complex problems by breaking them into smaller overlapping subproblems.
+
+**Topics:**
+
+* Recursion to Dynamic Programming
+* Memoization
+* Tabulation
+* Overlapping Subproblems
+* Optimal Substructure
+* 1D Dynamic Programming
+* 2D Dynamic Programming
+* Common DP Problems
+
+---
+
+# 🧩 Current Implementations
+
+| Program            | Topic                      | Status      |
+| ------------------ | -------------------------- | ----------- |
+| 🗼 `Toh.java`      | Recursion — Tower of Hanoi | ✅ Practiced |
+| 📚 `Push.java`     | Stack Using Array          | ✅ Practiced |
+| 🔗 `SLL.java`      | Singly Linked List         | ✅ Practiced |
+| 🔗 `DLL.java`      | Doubly Linked List         | ✅ Practiced |
+| 🔄 `CircleLL.java` | Circular Linked List       | ✅ Practiced |
+
+More implementations will be added as the learning journey progresses.
+
+---
+
+# 📊 Learning Progress
+
+| Topic                   | Status      |
+| ----------------------- | ----------- |
+| 🔢 Arrays               | 🔄 Learning |
+| 🔤 Strings              | 🔄 Learning |
+| 🔁 Recursion            | ✅ Practiced |
+| 🔗 Singly Linked List   | ✅ Practiced |
+| 🔗 Doubly Linked List   | ✅ Practiced |
+| 🔄 Circular Linked List | ✅ Practiced |
+| 📚 Stack                | ✅ Practiced |
+| 🚶 Queue                | ⏳ Upcoming  |
+| 🔍 Searching            | ⏳ Upcoming  |
+| 🔀 Sorting              | ⏳ Upcoming  |
+| 🌳 Trees                | ⏳ Upcoming  |
+| 🌲 Binary Search Tree   | ⏳ Upcoming  |
+| ⛰️ Heap                 | ⏳ Upcoming  |
+| #️⃣ Hashing             | ⏳ Upcoming  |
+| 🕸️ Graphs              | ⏳ Upcoming  |
+| 🧮 Dynamic Programming  | ⏳ Upcoming  |
+
+---
+
+# 🛠️ Technology
+
+### ☕ Language
+
+**Java**
+
+### 🧠 Core Concepts
+
+* Object-Oriented Programming
+* Classes and Objects
+* Constructors
+* Methods
+* Arrays
+* References
+* Recursion
+* Data Structures
+* Algorithms
+* Problem Solving
+* Time Complexity
+* Space Complexity
+
+---
+
+# 📈 DSA Roadmap
+
+```text
 🔢 Arrays
-   ↓
+      ↓
 🔤 Strings
-   ↓
+      ↓
 🔁 Recursion
-   ↓
+      ↓
 🔗 Linked Lists
-   ↓
+      ↓
 📚 Stack
-   ↓
+      ↓
 🚶 Queue
-   ↓
+      ↓
 🔍 Searching
-   ↓
+      ↓
 🔀 Sorting
-   ↓
+      ↓
 🌳 Trees
-   ↓
+      ↓
 🌲 Binary Search Tree
-   ↓
+      ↓
 ⛰️ Heap
-   ↓
+      ↓
 #️⃣ Hashing
-   ↓
+      ↓
 🕸️ Graphs
-   ↓
+      ↓
 🧮 Dynamic Programming
+```
 
+---
 
-# 📊 PROGRESS
+# 💻 How to Run
 
-### ☕ JAVA DSA
+Make sure Java is installed on your system.
 
-[x] 🔁 Recursion Basics
-[x] 🗼 Tower of Hanoi
-[x] 📚 Stack Basics
-[x] 🔗 Singly Linked List
-[x] 🔗 Doubly Linked List
-[x] 🔄 Circular Linked List
-[ ] 🚶 Queue
-[ ] 🔍 Searching Algorithms
-[ ] 🔀 Sorting Algorithms
-[ ] 🌳 Trees
-[ ] 🌲 Binary Search Tree
-[ ] ⛰️ Heap
-[ ] #️⃣ Hashing
-[ ] 🕸️ Graphs
-[ ] 🧮 Dynamic Programming
+### Check Java Version
 
-
-# ▶️ HOW TO RUN
-
-Make sure Java is installed.
-
-Check Java version:
-
+```bash
 java --version
+```
 
-Compile a Java program:
+### Compile a Java Program
 
+```bash
 javac FileName.java
+```
 
-Run the program:
+### Run the Program
 
+```bash
 java FileName
+```
 
-Example:
+### Example
 
+```bash
 javac Toh.java
 java Toh
+```
 
+---
 
-# 📂 CURRENT PRACTICE PROGRAMS
+# 📁 Recommended Structure
 
-| Program       | Concept                  |
-|---------------|--------------------------|
-| Toh.java      | 🗼 Tower of Hanoi        |
-| Push.java     | 📚 Stack                 |
-| SLL.java      | 🔗 Singly Linked List    |
-| DLL.java      | 🔗 Doubly Linked List    |
-| CircleLL.java | 🔄 Circular Linked List  |
+```text
+DSA-Java/
+│
+├── 01_Arrays/
+│
+├── 02_Strings/
+│
+├── 03_Recursion/
+│   └── Toh.java
+│
+├── 04_LinkedList/
+│   ├── SLL.java
+│   ├── DLL.java
+│   └── CircleLL.java
+│
+├── 05_Stack/
+│   └── Push.java
+│
+├── 06_Queue/
+│
+├── 07_Searching/
+│
+├── 08_Sorting/
+│
+├── 09_Trees/
+│
+├── 10_BST/
+│
+├── 11_Heap/
+│
+├── 12_Hashing/
+│
+├── 13_Graphs/
+│
+└── 14_DynamicProgramming/
+```
 
+---
 
-# 🎯 PURPOSE
+# 🧠 Learning Approach
 
-This repository documents my Data Structures and Algorithms
-learning journey using Java.
+For every topic, my learning process follows:
 
-The focus is on:
+```text
+📖 Learn the Concept
+        ↓
+🧠 Understand the Logic
+        ↓
+✍️ Implement from Scratch
+        ↓
+🧪 Test with Different Inputs
+        ↓
+📊 Analyze Complexity
+        ↓
+🧩 Solve Problems
+        ↓
+🚀 Improve the Solution
+```
 
-Understand
-    ↓
-Implement
-    ↓
-Practice
-    ↓
-Analyze
-    ↓
-Improve
-    ↓
-Repeat 🔁
+The focus is on understanding **how a data structure or algorithm works, why it works, and where it can be applied**.
 
+---
 
-# 🌱 CONTINUOUS LEARNING
+# 🎯 Goals
+
+### Short-Term
+
+* ☕ Strengthen Java fundamentals
+* 🧠 Build a strong DSA foundation
+* 🔗 Master fundamental data structures
+* 🔄 Practice DSA consistently
+* 🧩 Improve logical thinking
+* 📊 Understand complexity analysis
+
+### Long-Term
+
+* 🚀 Master advanced DSA
+* 🧩 Solve coding interview problems
+* 💻 Improve competitive programming skills
+* 🎯 Prepare for software engineering placements
+* 🧠 Develop strong algorithmic thinking
+
+---
+
+# 🌱 Continuous Learning
 
 This repository is a work in progress.
 
 I will continue adding:
 
-- 📌 New Data Structures
-- ⚙️ New Algorithms
-- 🧩 Problem-solving exercises
-- 📊 Complexity analysis
-- 💡 Improved implementations
-- 🎯 Interview-oriented problems
+* 📚 New Data Structures
+* ⚙️ New Algorithms
+* 🧩 Problem-Solving Exercises
+* 📊 Complexity Analysis
+* 💡 Improved Implementations
+* 🎯 Interview-Oriented Problems
 
+```text
+Learn → Implement → Practice → Analyze → Improve → Repeat 🔁
+```
 
-# 👨‍💻 AUTHOR
+---
 
-Jeel Finaviya
+# 👨‍💻 Author
+
+## Jeel Finaviya
 
 🎓 Computer Science & Information Technology Student
 💻 Software Development Enthusiast
 🤖 AI/ML Enthusiast
-🧠 DSA & Problem Solving Learner
+🧠 DSA & Problem-Solving Learner
 
-GitHub:
-https://github.com/JeelFinaviya
+### 🔗 GitHub
 
+[https://github.com/JeelFinaviya](https://github.com/JeelFinaviya)
 
-# ⭐ REPOSITORY
+---
 
-This repository represents my continuous journey of learning
-and practicing Data Structures and Algorithms using Java.
+# ⭐ DSA Journey
 
-More implementations and problems will be added as I continue
-learning and improving my programming skills.
+> Consistency beats intensity.
 
-🚀 Learn → Implement → Practice → Improve
+This repository represents my continuous journey of learning and practicing **Data Structures & Algorithms using Java**.
+
+The goal is simple:
+
+**Learn → Code → Practice → Improve 🚀**
+
+```
+```
